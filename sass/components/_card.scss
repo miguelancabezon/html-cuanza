@@ -1,0 +1,22 @@
+.card {
+  border-radius: 0.375rem;
+  padding: 20px 0px;
+  gap: 8px;
+  display: flex;
+}
+
+.card-column {
+  flex-direction: column;
+}
+
+.card-row {
+  flex-direction: row;
+}
+
+.card-flat {
+  background-color: $white-color;
+}
+
+.card-outlined {
+  border: 1px solid $gray-color-light;
+}

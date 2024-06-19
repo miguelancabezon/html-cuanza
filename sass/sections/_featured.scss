@@ -1,0 +1,18 @@
+.featured {
+  background-color: $gray-color-lighten;
+  gap: 20px;
+
+  .featured-item {
+    border-right: 1px solid $white-color;
+    width: 100%;
+    gap: 20px;
+
+    &:last-child {
+      border: none;
+    }
+
+  }
+
+  
+}
+

@@ -1,0 +1,10 @@
+.button-primary {
+  @include button($white-color, $primary-color);
+}
+
+.button-text {
+  @include button($primary-color, transparent);
+  padding: 0 !important;
+  justify-content: end;
+  width: fit-content;
+}

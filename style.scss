@@ -1,0 +1,17 @@
+@import './sass/abstracts/mixins';
+@import './sass/abstracts/colors';
+
+@import './sass/base/general';
+
+@import './sass/components/topbar';
+@import './sass/components/button';
+@import './sass/components/nav';
+@import './sass/components/card';
+@import './sass/components/image';
+@import './sass/components/slider';
+@import './sass/components/footer';
+
+@import './sass/sections/header';
+@import './sass/sections/featured';
+@import './sass/sections/content-home';
+@import './sass/sections/methodology';
