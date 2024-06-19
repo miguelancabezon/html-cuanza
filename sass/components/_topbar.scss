@@ -1,4 +1,10 @@
 .topbar {
+  transition: display 2s ease-in-out;
+
+  div:has(> a#top-toggler) {
+    display: none;
+  }
+
   .top-social-icon {
     i {
       color: $white-color;
@@ -34,12 +40,17 @@
   }
 }
 
-/* XL breakpoint */
-@media screen and (min-width: 1200px) {
-  
-}
-
 /* MD breakpoint */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: $breakpoint-md) {
+  .topbar {
+    height: fit-content !important;
+
+    div:has(> a#top-toggler) {
+      display: flex;
+    }
   
+    .top-navigation {
+      display: none;
+    }
+  }
 }

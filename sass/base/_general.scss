@@ -7,6 +7,10 @@
   color: $gray-color-dark;
 }
 
+html {
+  width: 100%;
+}
+
 h2 {
   font-size: 1.875rem !important;
   font-weight: 600 !important;
@@ -31,9 +35,8 @@ h3 {
 }
 
 .bg-secondary {
-  background-color:  $bg-secondary;
+  background-color: $bg-secondary;
 }
-
 
 .text-highlight {
   color: $primary-color;
@@ -44,30 +47,38 @@ h3 {
   height: 75px;
 }
 
-@media (min-width: 1200px) {
+#to-top {
+  display: none;
+  animation: fadeIn 1s ease 0s 1 normal backwards;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
   .logo {
     width: 180px;
     height: 50px;
   }
+}
 
+@media screen and (max-width: 1200px) {
   .container {
-    max-width: 1140px;
+      max-width: 1140px;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
-@media (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .container {
     max-width: 540px;
   }
