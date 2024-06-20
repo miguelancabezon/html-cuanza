@@ -12,8 +12,13 @@
   }
 
   #searchbar {
+    width: 100%;
     min-width: 141px;
     gap: 20px;
+
+    form {
+      width: 100%;
+    }
 
     .input-container {
       width: 100%;
