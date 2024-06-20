@@ -19,7 +19,26 @@ document.getElementById("top-toggler").addEventListener("click", (el) => {
     toggler.style.transform = "rotate(0deg)";
   } else {
     topMenu.style.display = "flex";
-    toggler.style.transform = "rotate(90deg)";
+    toggler.style.transform = "rotate(-90deg)";
+  }
+});
+
+document.getElementById("menu-toggler").addEventListener("click", (el) => {
+  let menu = document.getElementById("menu");
+  let toggler = el.target;
+
+  if (menu === null || menu === undefined) {
+    return;
+  }
+
+  if (toggler === null || toggler === undefined) {
+    return;
+  }
+
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
   }
 });
 
@@ -27,7 +46,7 @@ document.getElementById("top-toggler").addEventListener("click", (el) => {
 
 /* ----  To Top button: Hide on Top, Show when Scroll --- */
 // Get the button:
-let mybutton = document.getElementById("to-top");
+let topButton = document.getElementById("to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -36,8 +55,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
   }
 }

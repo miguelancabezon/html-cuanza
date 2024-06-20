@@ -39,7 +39,7 @@
         <div class="top-navigation flex">
           <div class="w-full flex items-center p-0">
             <a href="#">
-              <p class="text-white font-semibold text-xs">ele.unic.ca.ao</p>
+              <p class="text-white font-semibold text-xs">ele.unic.co.ao</p>
             </a>
           </div>
           <div class="flex flex-col-reverse md:flex-row">
@@ -78,13 +78,10 @@
                 </li>
               </ul>
             </div>
-            <div id="searchbar">
+            <div id="searchbar" class="flex items-center">
               <form action="/resultado" method="get" id="searchform" accept-charset="UTF-8">
-                <div class="input-container">
-                  <input type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15"
-                    maxlength="128" />
-                  <img src="./assets/icons/icon--search-black.svg" alt="Ícone de pesquisa" />
-                </div>
+                <input class="input-container" type="text" id="edit-search-block-form--2" name="search_block_form"
+                  value="" size="15" maxlength="128" />
               </form>
             </div>
           </div>
@@ -92,7 +89,7 @@
       </div>
     </div>
     <!-- ========== HEADER ============ -->
-    <!-- <div class="header">
+    <div class="header">
       <header id="header" class="flex items-center justify-center">
         <div class="container">
           <div class="py-2 flex items-center justify-between w-full">
@@ -109,166 +106,186 @@
           </div>
         </div>
       </header>
-    </div> -->
+    </div>
     <!-- ========== MENU ============ -->
-    <!-- <div class="w-full border-y-[1px]">
-      <nav id="menu" class="menu container w-full flex items-center justify-center">
-        <ul class="w-full flex flex-row justify-between items-center ">
-          <li>
-            <a href="#" title="Cursos">Cursos</a>
-          </li>
-          <li>
-            <a href="#" title="Metodologia">Metodologia</a>
-          </li>
-          <li>
-            <a href="#" title="Atividades">Atividades</a>
-          </li>
-          <li>
-            <a href="#" title="Instalações">Instalações</a>
-          </li>
-          <li>
-            <a href="#" title="Acomodação">Acomodação</a>
-          </li>
-          <li>
-            <a href="#" title="Sobre nós">Sobre nós</a>
-          </li>
-        </ul>
-      </nav>
-    </div> -->
+    <div class="w-full border-y-[1px]">
+      <div class="container">
+        <div class="w-full md:hidden flex justify-end">
+          <a id="menu-toggler">
+            <i class="fa-solid fa-bars text-highlight"></i>
+          </a>
+        </div>
+        <nav id="menu" class="menu w-full hidden md:flex items-center justify-center px-[36px]">
+          <ul class="w-full flex flex-col md:flex-row justify-between items-center ">
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Cursos">Cursos</a>
+            </li>
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Metodologia">Metodologia</a>
+            </li>
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Atividades">Atividades</a>
+            </li>
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Instalações">Instalações</a>
+            </li>
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Acomodação">Acomodação</a>
+            </li>
+            <li class="border-b md:border-none border-neutral-300">
+              <a href="#" title="Sobre nós">Sobre nós</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <!-- ========== SLIDER ============ -->
-    <!-- <section id="slider" class="slider w-full h-[495px] gap-[20px] flex items-center justify-center">
+    <section id="slider" class="slider w-full h-[495px] gap-[20px] flex items-center justify-center">
       <div class="slider-item w-full h-full flex justify-center items-end">
-        <img src="./assets/images/slider/slide-cuanza2.jpg" alt="Imagem de estudantes" class="relative img-fill" />
+        <img src="./assets/images/slider/slider-1.jpg" alt="Imagem de estudantes" class="relative img-fill" />
         <div class="card card-flat slider-item-content w-fit h-fit absolute mb-12">
           <div class="slider-item-content-text w-full flex flex-col items-center justify-center">
             CURSOS DE ESPAnhOL GERAL <span class="text-highlight">MODALIDADe EXTENSIVA</span>
           </div>
         </div>
-    </section> -->
+    </section>
     <!-- ========== FEATURED ============ -->
-    <!-- <div class="w-full featured">
-      <section id="featured" class="container h-[85px] flex items-center justify-center">
-        <ul class="w-full h-full flex flex-row items-center justify-center gap-5">
-          <li class="featured-item flex flex-row justify-center items-center">
-            <img src="./assets/icons/featured/academic.svg" alt="Telefone" class="featured-item-img" />
-            <div class="flex flex-col justify-start">
-              <p class="featured-item-title uppercase text-sm">Créditos</p>
-              <p class="featured-item-subtitle text-xs font-semibold">6 créditos concedidos</p>
-            </div>
-          </li>
-          <li class="featured-item flex flex-row justify-center items-center">
-            <img src="./assets/icons/featured/hourglass.svg" alt="Telefone" class="featured-item-img" />
-            <div class="flex flex-col justify-start">
-              <p class="uppercase text-sm">Duração</p>
-              <p class="text-xs font-semibold">60 horas</p>
-            </div>
-          </li>
-          <li class="featured-item flex flex-row justify-center items-center">
-            <img src="./assets/icons/featured/coins.svg" alt="Telefone" class="featured-item-img" />
-            <div class="flex flex-col justify-start">
-              <p class="uppercase text-sm">Preço curso</p>
-              <p class="text-xs font-semibold">54 000 kwanzas</p>
-            </div>
-          </li>
-          <li class="featured-item flex flex-row justify-center items-center">
-            <img src="./assets/icons/featured/diploma.svg" alt="Telefone" class="featured-item-img" />
-            <div class="flex flex-col justify-start">
-              <p class="uppercase text-sm">Preço diploma</p>
-              <p class="text-xs font-semibold">10 000 kwanzas</p>
-            </div>
-          </li>
+    <section id="featured" class="featured w-full h-full lg:h-[85px] ">
+      <div class="container h-full flex items-center justify-center">
+        <ul class="w-full h-full flex flex-col lg:flex-row items-center justify-center gap-5">
+          <div class="w-full flex flex-col md:flex-row gap-5">
+            <li class="featured-item flex flex-row justify-center items-center lg:border-r border-white">
+              <img src="./assets/icons/featured/academic.svg" alt="Telefone" class="featured-item-img" />
+              <div class="flex flex-col justify-start">
+                <p class="featured-item-title uppercase text-sm">Créditos</p>
+                <p class="featured-item-subtitle text-xs font-semibold">6 créditos concedidos</p>
+              </div>
+            </li>
+            <li class="featured-item flex flex-row justify-center items-center lg:border-r border-white">
+              <img src="./assets/icons/featured/hourglass.svg" alt="Telefone" class="featured-item-img" />
+              <div class="flex flex-col justify-start">
+                <p class="uppercase text-sm">Duração</p>
+                <p class="text-xs font-semibold">60 horas</p>
+              </div>
+            </li>
+          </div>
+          <div class="w-full flex flex-col md:flex-row gap-5">
+            <li class="featured-item flex flex-row justify-center items-center lg:border-r border-white">
+              <img src="./assets/icons/featured/coins.svg" alt="Telefone" class="featured-item-img" />
+              <div class="flex flex-col justify-start">
+                <p class="uppercase text-sm">Preço curso</p>
+                <p class="text-xs font-semibold">54 000 kwanzas</p>
+              </div>
+            </li>
+            <li class="featured-item flex flex-row justify-center items-center">
+              <img src="./assets/icons/featured/diploma.svg" alt="Telefone" class="featured-item-img" />
+              <div class="flex flex-col justify-start">
+                <p class="uppercase text-sm">Preço diploma</p>
+                <p class="text-xs font-semibold">10 000 kwanzas</p>
+              </div>
+            </li>
+          </div>
         </ul>
-      </section>
-    </div> -->
+      </div>
+    </section>
     <!-- ========== CONTENT HOME ============ -->
-    <!-- <section id="content-home"
-      class="content-home w-full h-fit flex flex-col align-center items-center justify-center px-[245px] gap-[30px] py-[60px]">
-      <p class="text-center text-xl">
-        Cursos de tempo parcial, organizados por quadrimestres e destinados a pessoas que desejam aprender espanhol ou
-        melhorar sua proficiência neste idioma por motivos pessoais, acadêmicos ou profissionais.
-      </p>
-      <ul class="w-full h-full flex flex-row justify-between gap-[30px]">
-        <li class="w-full">
-          <div class="h-full card card-outlined card-column items-center">
-            <h3 class="text-highlight">Níveis</h3>
-            <p>Nível Inicial A1 / A2</p>
-            <p>Nível intermediário B1/B2</p>
-            <p>Nível superior C1/C2</p>
-          </div>
-        </li>
-        <li class="w-full">
-          <div class="h-full card card-outlined card-column items-center">
-            <h3 class="text-highlight">Datas</h3>
-            <p class="font-semibold">1º quadrimestre:</p>
-            <p>11/10/2023 al 23/01/2024</p>
-            <p class="font-semibold">2º quadrimestre:</p>
-            <p>05/02/2024 al 25/06/2024</p>
-          </div>
-        </li>
-        <li class="w-full">
-          <div class="h-full card card-outlined card-column items-center">
-            <h3 class="text-highlight">Horário</h3>
-            <p>Segunda e quarta-feira 18:25-20:25</p>
-            <p>Terça e quinta-feira: 18:25-20:25</p>
-            <p>Quarta e sexta-feira 19:00-21:00</p>
-          </div>
-        </li>
-      </ul>
-      <div class="lang-levels w-full pt-5 gap-[30px] flex flex-col justify-center items-center">
-        <h3 class="text-highlight">Programas de español</h3>
-        <ul class="flex flex-row gap-5">
-          <li><span>A1</span></li>
-          <li><span>A2</span></li>
-          <li><span>B1</span></li>
-          <li><span>B2</span></li>
-          <li><span>C1</span></li>
-          <li><span>C2</span></li>
+    <section id="content-home" class="content-home w-full h-fit py-[60px]">
+      <div class="container flex flex-col align-center items-center justify-center  gap-[30px] ">
+        <p class="text-center text-xl">
+          Cursos de tempo parcial, organizados por quadrimestres e destinados a pessoas que desejam aprender espanhol ou
+          melhorar sua proficiência neste idioma por motivos pessoais, acadêmicos ou profissionais.
+        </p>
+        <ul class="w-full h-full flex flex-col md:flex-row justify-between gap-[30px]">
+          <li class="w-full">
+            <div class="h-full card card-outlined card-column items-center">
+              <h3 class="text-highlight">Níveis</h3>
+              <p>Nível Inicial A1 / A2</p>
+              <p>Nível intermediário B1/B2</p>
+              <p>Nível superior C1/C2</p>
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="h-full card card-outlined card-column items-center">
+              <h3 class="text-highlight">Datas</h3>
+              <p class="font-semibold">1º quadrimestre:</p>
+              <p>11/10/2023 al 23/01/2024</p>
+              <p class="font-semibold">2º quadrimestre:</p>
+              <p>05/02/2024 al 25/06/2024</p>
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="h-full card card-outlined card-column items-center">
+              <h3 class="text-highlight">Horário</h3>
+              <p>Segunda e quarta-feira 18:25-20:25</p>
+              <p>Terça e quinta-feira: 18:25-20:25</p>
+              <p>Quarta e sexta-feira 19:00-21:00</p>
+            </div>
+          </li>
         </ul>
+        <div class="lang-levels w-full pt-5 gap-[30px] flex flex-col justify-center items-center">
+          <h3 class="text-highlight">Programas de español</h3>
+          <ul class="flex flex-col md:flex-row gap-5">
+            <span class="flex gap-5">
+              <li><span>A1</span></li>
+              <li><span>A2</span></li>
+            </span>
+            <span class="flex gap-5">
+              <li><span>B1</span></li>
+              <li><span>B2</span></li>
+            </span>
+            <span class="flex gap-5">
+              <li><span>C1</span></li>
+              <li><span>C2</span></li>
+            </span>
+          </ul>
+        </div>
+        <p class="helper-text text-xs">*Para a abertura de um grupo, é necessária uma inscrição mínima de cinco alunos
+          do
+          mesmo nível.</p>
       </div>
-      <p class="helper-text text-xs">*Para a abertura de um grupo, é necessária uma inscrição mínima de cinco alunos do
-        mesmo nível.</p>
-    </section> -->
+    </section>
     <!-- ========== IMG ============ -->
-    <!-- <section id="img" class="img w-full h-[367px] flex items-center justify-center">
+    <section id="img" class="img w-full h-[367px] flex items-center justify-center">
       <img src="./assets/images/image.svg" alt="Imagem de livros" class="h-full img-fill" />
-    </section> -->
+    </section>
     <!-- ========== METHODOLOGY ============ -->
-    <!-- <section id="methodology"
-      class="methodology w-full h-fit flex flex-col items-center justify-center px-[245px] py-[60px]">
-      <h2 class="pb-[30px]"><span class="text-highlight">Nossa</span> Metodologia</h2>
-      <ul class="w-full flex flex flex-row justify-between gap-[30px]">
-        <li>
-          <div class="methodology-card card card-flat">
-            <img src="./assets/icons/methodology/communication.svg" alt="Telefone" class="methodology-item-img" />
-            <p class="methodology-card-title">A abordagem comunicativa</p>
-            <p class="text-base">O ensino da língua é compreendido a partir da ação. A partir desta abordagem, são
-              introduzidas e integradas as diferentes competências, bem como o ensino de conteúdos lexicais.</p>
-
-          </div>
-        </li>
-        <li>
-          <div class="methodology-card card card-flat">
-            <img src="./assets/icons/methodology/global.svg" alt="Global icon" class="methodology-item-img" />
-            <p class="methodology-card-title">FATOR INTERCULTURAL</p>
-            <p class="text-base">As competências gerais são transferidas para a sala de aula por meio de atividades que
-              estimulam a reflexão intercultural, o respeito e a curiosidade pelo diferente.</p>
-          </div>
-        </li>
-        <li>
-          <div class="methodology-card card card-flat">
-            <img src="./assets/icons/methodology/tech.svg" alt="Global icon" class="featured-item-img" />
-            <p class="methodology-card-title">NOVAS TECNOLOGIAS</p>
-            <p class="text-base">Outro fator que identifica a UNEATLÁNTICO é o compromisso com a tecnologia no processo
-              de ensino-aprendizagem. As aulas de espanhol integram.</p>
-          </div>
-        </li>
-      </ul>
-      <div class="w-full flex items-center justify-end h-[36px]">
-        <button class="button-text">Ver mais <i class="fa-solid fa-angles-right"></i></button>
+    <section id="methodology" class="methodology w-full h-fit py-[60px]">
+      <div class="container flex flex-col items-center justify-center ">
+        <h2 class="pb-[30px]"><span class="text-highlight">Nossa</span> Metodologia</h2>
+        <ul class="w-full flex flex flex-col md:flex-row justify-between items-center md:items-start gap-[30px]">
+          <li>
+            <div class="methodology-card card card-flat">
+              <img src="./assets/icons/methodology/communication.svg" alt="Telefone" class="methodology-item-img" />
+              <p class="methodology-card-title">A abordagem comunicativa</p>
+              <p class="text-base">O ensino da língua é compreendido a partir da ação. A partir desta abordagem, são
+                introduzidas e integradas as diferentes competências, bem como o ensino de conteúdos lexicais.</p>
+            </div>
+          </li>
+          <li>
+            <div class="methodology-card card card-flat">
+              <img src="./assets/icons/methodology/global.svg" alt="Global icon" class="methodology-item-img" />
+              <p class="methodology-card-title">FATOR INTERCULTURAL</p>
+              <p class="text-base">As competências gerais são transferidas para a sala de aula por meio de atividades
+                que
+                estimulam a reflexão intercultural, o respeito e a curiosidade pelo diferente.</p>
+            </div>
+          </li>
+          <li>
+            <div class="methodology-card card card-flat">
+              <img src="./assets/icons/methodology/tech.svg" alt="Global icon" class="featured-item-img" />
+              <p class="methodology-card-title">NOVAS TECNOLOGIAS</p>
+              <p class="text-base">Outro fator que identifica a UNEATLÁNTICO é o compromisso com a tecnologia no
+                processo
+                de ensino-aprendizagem. As aulas de espanhol integram.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="w-full flex items-center justify-end h-[36px]">
+          <button class="button-text">Ver mais <i class="fa-solid fa-angles-right"></i></button>
+        </div>
       </div>
-    </section> -->
+    </section>
     <!-- ========== FOOTER ============ -->
-    <div class="h-screen"></div>
     <footer id="footer" class="footer w-full min-h-[40px] flex items-center justify-center">
       <div class="container py-[10px] bg-black flex items-center justify-between w-full">
         <p class="text-white">© Copyright Universidade Internacional do Cuanza - Todos os direitos reservados</p>

@@ -15,6 +15,24 @@ nav {
         align-self: center;
         font-weight: 400;
         text-transform: uppercase;
+        // width: fit-content;
       }
     }
+}
+
+/* MD breakpoint */
+@media screen and (max-width: $breakpoint-md) {
+  nav {
+    height: fit-content;
+
+    li {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      a {
+        text-transform: capitalize;
+      }
+      
+    }
+  }
 }
