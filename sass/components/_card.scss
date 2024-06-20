@@ -1,9 +1,9 @@
 .card {
-  border-radius: 0.375rem;
+  display: flex;
   padding: 20px 0px;
   gap: 8px;
-  display: flex;
-}
+  border-radius: 0.375rem;  
+  }
 
 .card-column {
   flex-direction: column;

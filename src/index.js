@@ -1,6 +1,4 @@
-console.log("LANG " + document.documentElement.lang);
-
-/* Listeners */
+/* =============== LISTENERS =============== */
 window.addEventListener("resize", function () {
   var width = window.innerWidth;
   var menu = document.getElementById("menu");
@@ -14,6 +12,7 @@ window.addEventListener("resize", function () {
   }
 });
 
+// Top Toggler Button (three dots)
 document.getElementById("top-toggler").addEventListener("click", (el) => {
   let topMenu = document.getElementsByClassName("top-navigation")[0];
   let toggler = el.target;
@@ -35,6 +34,7 @@ document.getElementById("top-toggler").addEventListener("click", (el) => {
   }
 });
 
+// Menu Toggler Button (burger)
 document.getElementById("menu-toggler").addEventListener("click", (el) => {
   let menu = document.getElementById("menu");
   let toggler = el.target;
@@ -54,7 +54,7 @@ document.getElementById("menu-toggler").addEventListener("click", (el) => {
   }
 });
 
-/* Functions */
+/* =============== FUNCTIONS =============== */
 
 /* ----  To Top button: Hide on Top, Show when Scroll --- */
 // Get the button:
@@ -65,6 +65,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 
+// When the user clicks on the button, scroll to the top of the document
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "block";

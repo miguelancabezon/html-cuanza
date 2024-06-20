@@ -17,26 +17,31 @@
 
     .input-container {
       width: 100%;
-      border-radius: 4px;
-      border: none;
-      padding: 0 7px;
+      height: 15px;
+
       background: $white-color url('../../assets/icons/icon--search-black.svg') no-repeat right 4px top 3px;
       background-size: 10px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 15px;
+
+      border: none;
+      border-radius: 4px;
+
+      padding: 0 7px;
+      
       color: $gray-color-dark;
       font-size: 12px;
     }
   }
 }
 
-/* MD breakpoint */
+
 @media screen and (max-width: $breakpoint-md) {
   .topbar {
-    min-height: 36px;
     height: fit-content !important;
+    min-height: 36px;
 
     div:has(> a#top-toggler) {
       display: flex;

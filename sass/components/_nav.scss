@@ -5,17 +5,18 @@ nav {
 
     ul {
       li {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 12px;
-        color: $gray-color-dark;
         cursor: pointer;
-        font-size: 0.875rem;
-        line-height: 20px;
+
+        display: inline-block;
         align-self: center;
+
+        margin-right: 10px;
+
+        color: $gray-color-dark;
+        font-size: 0.875rem;
         font-weight: 400;
+        line-height: 20px;
         text-transform: uppercase;
-        // width: fit-content;
       }
     }
 }
@@ -24,7 +25,6 @@ nav {
 @media screen and (max-width: $breakpoint-md) {
   nav {
     height: fit-content;
-
     li {
       width: 100%;
       padding-top: 10px;
@@ -32,7 +32,6 @@ nav {
       a {
         text-transform: capitalize;
       }
-      
     }
   }
 }

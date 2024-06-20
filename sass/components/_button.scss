@@ -4,17 +4,16 @@
 
 .button-text {
   @include button($primary-color, transparent);
-  padding: 0 !important;
-  justify-content: end;
+
   width: fit-content;
+  justify-content: end;
+  padding: 0 !important;
 }
 
 @media screen and (max-width: $breakpoint-xs) {
-
   .button-primary {
     p {
       display: none;
     }
   }
-  
 }
