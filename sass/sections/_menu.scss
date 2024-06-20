@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-md) {
   .menu {
     padding-left: 0;
     padding-right: 0;

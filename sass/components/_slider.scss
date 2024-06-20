@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-md) {
   .slider {
     height: 200px;
     .slider-item {
@@ -23,6 +23,19 @@
         .slider-item-content-text {
           width: 300px;
           font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  .slider {
+    .slider-item {
+      .slider-item-content {
+        padding: 0;
+        .slider-item-content-text {
+          font-size: 16px;
         }
       }
     }

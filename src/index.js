@@ -1,18 +1,30 @@
 console.log("LANG " + document.documentElement.lang);
 
 /* Listeners */
+window.addEventListener("resize", function () {
+  var width = window.innerWidth;
+  var menu = document.getElementById("menu");
+  var topMenu = document.getElementsByClassName("top-navigation")[0];
+  if (width <= 768) {
+    menu.style.display = "none";
+    topMenu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+    topMenu.style.display = "flex";
+  }
+});
 
 document.getElementById("top-toggler").addEventListener("click", (el) => {
   let topMenu = document.getElementsByClassName("top-navigation")[0];
   let toggler = el.target;
 
-  if (topMenu === null || topMenu === undefined) {
+  if (
+    menu === null ||
+    menu === undefined ||
+    toggler === null ||
+    toggler === undefined
+  )
     return;
-  }
-
-  if (toggler === null || toggler === undefined) {
-    return;
-  }
 
   if (topMenu.style.display === "flex") {
     topMenu.style.display = "none";
@@ -27,18 +39,18 @@ document.getElementById("menu-toggler").addEventListener("click", (el) => {
   let menu = document.getElementById("menu");
   let toggler = el.target;
 
-  if (menu === null || menu === undefined) {
+  if (
+    menu === null ||
+    menu === undefined ||
+    toggler === null ||
+    toggler === undefined
+  )
     return;
-  }
 
-  if (toggler === null || toggler === undefined) {
-    return;
-  }
-
-  if (menu.style.display === "flex") {
-    menu.style.display = "none";
-  } else {
+  if (menu.style.display === "none") {
     menu.style.display = "flex";
+  } else {
+    menu.style.display = "none";
   }
 });
 

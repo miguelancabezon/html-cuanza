@@ -8,3 +8,13 @@
   justify-content: end;
   width: fit-content;
 }
+
+@media screen and (max-width: $breakpoint-xs) {
+
+  .button-primary {
+    p {
+      display: none;
+    }
+  }
+  
+}
